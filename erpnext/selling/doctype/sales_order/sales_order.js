@@ -192,7 +192,7 @@ erpnext.selling.SalesOrderController = erpnext.selling.SellingController.extend(
 				if(!r.message) {
 					frappe.msgprint({
 						title: __('Production Order not created'),
-						message: __('No Items with Bill of Materials to Manufacture'),
+						message: __('No Items with Bill of Materials to Manufacture. Create Bill of Material for the Sales Order Item to be manufactured, and set it as default.'),
 						indicator: 'orange'
 					});
 					return;
